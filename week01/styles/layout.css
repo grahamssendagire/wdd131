@@ -1,0 +1,89 @@
+/* Basic reset */  
+body, h1, p, ul {  
+    margin: 0;  
+    padding: 0;  
+}  
+
+/* Container with CSS Grid */  
+.container {  
+    display: grid;  
+    grid-template-rows: auto 1fr auto; /* Header, Main, Footer */  
+    grid-template-columns: 1fr 300px;   /* Content, Sidebar */  
+    grid-template-areas:   
+        "header header"  
+        "content sidebar"  
+        "footer footer";  
+    height: 100vh; /* Full height */  
+}  
+
+/* Header styling */  
+header {  
+    grid-area: header;  
+    background-color: #333; /* Dark background */  
+    color: white;  
+    display: flex;  
+    flex-direction: column;  
+}  
+
+/* Header content */  
+.header-content {  
+    padding: 10px;  
+    font-size: 24px; /* Larger font */  
+}  
+
+/* Navigation styles */  
+nav {  
+    background-color: black; /* Black background for navigation */  
+}  
+
+nav ul {  
+    display: flex;  
+    list-style-type: none; /* Remove bullets */  
+    padding: 10px 0; /* Padding for nav */  
+    justify-content: none; /* Open justification for the navigation items */  
+}  
+
+nav ul li {  
+    margin: 0 35px; /* Spacing between items */  
+}  
+
+nav ul li a {  
+    color: white; /* Link color */  
+    text-decoration: none; /* Remove underline */  
+}  
+
+/* Change link color on hover */  
+nav ul li a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}  
+
+/* Main content styling */  
+main {  
+    grid-area: content;  
+    display: grid; /* Enable grid in main */  
+    grid-template-areas:   
+        "content sidebar";  
+    padding: 20px; /* Padding for main content */  
+}  
+
+/* Main content section */  
+.content {  
+    grid-area: content;  
+    background-color: lightgray; /* Background for main content */  
+    padding: 20px; /* Padding */  
+}  
+
+/* Sidebar styling */  
+.sidebar {  
+    background-color: white; /* White background */  
+    padding: 20px; /* Padding for sidebar */  
+}  
+
+/* Footer styling */  
+footer {  
+    grid-area: footer;  
+    background-color: #333; /* Dark background */  
+    color: white;  
+    text-align: center;  
+    padding: 10px; /* Padding */  
+}  
