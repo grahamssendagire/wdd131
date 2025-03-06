@@ -3,9 +3,16 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="YOUR_INTEGRITY_HASH" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/base.css">  
-    <title>WDD 131-Dynamic Web Fundamentals -Graham Ssendagire </title>  
+    <title>WDD 131-Dynamic Web Fundamentals -Graham Ssendagire </title> 
+    <meta name="description" content="WDD 131- Dynamic Web Fundamentals -Graham Ssendagire -  introduces responsive design using HTML, CSS, and JavaScript
+     with attention to usability, accessibility, and best practices in web frontend development.
+     This two-credit course builds on prior experience in Web Fundamentals and programming.
+     Students will learn to create dynamic websites that use JavaScript to respond to events,
+     update content, and create responsive user experiences.">  
+    <meta name="author" content="Graham Ssendagire"> 
+     
 </head>  
 <body>  
     <div class="container">  
@@ -21,10 +28,37 @@
             </nav>  
         </header>  
         <main>  
-            <section class="content">About Me</section>  
-            <aside class="card">Web Dev Resources</aside>  
+            <section class="card">  
+                <h2>About Me</h2>  
+                <img src="image1.jpg" alt="Image 1 Description">  
+                <p>My name is Graham Ssendagire and I go by Graham. I was born in Uganda and live with my family in Mukono.
+                 I am currently working as an Quality Assurance Officer at CocaCola Beverages Uganda. My children are my world and I love spending time with them. 
+                 I love football more so watching local clubs like Kyagwe FC and I love learning new skills more so in engineering and Technology aspects.
+                 </P>
+                 <h3>Kampala,Mukono</h3> 
+                 <P>
+                 Mukono Town is located in Mukono District, in the Central Region of Uganda. It's about 21 kilometers (13 miles) east of Kampala, Uganda's capital city.
+                 Mukono has several islands, including: Koome Island, Damba Island, Nsazi Island, and Ngamba Island Chimpanzee Sanctuary.
+                 The town is home to the main campus of Uganda Christian University, a well-respected institution.</p>  
+            </section>   
+            <section class="card">  
+                <h2>Web Dev Resources</h2>  
+                <img src="image2.jpg" alt="Image 2 Description">  
+                <ul>  
+                    <li><a href="#">Dev.to Community</a></li> <!-- Replace with actual link -->  
+                    <li><a href="#">Smashing Magazine</a></li> <!-- Replace with actual link -->  
+                    <li><a href="#">CSS Tricks</a></li> <!-- Replace with actual link -->  
+                    <li><a href="#">W3 Schools</a></li> <!-- Replace with actual link -->  
+                    <li><a href="#">Udemy</a> <!-- Replace with actual link -->  
+                    <li>Image Placeholder</li>  
+                </ul>  
+            </section>   
         </main>  
-        <footer>Footer Content</footer>  
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Graham Ssendagire Mukono Uganda.</p>  
+            <p id="lastModified"></p> 
+         </footer> 
+         <script src ="scripts/getdates.js"> </script>     
     </div>  
 </body>  
 </html>  

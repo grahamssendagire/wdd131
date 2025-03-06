@@ -1,39 +1,36 @@
-/* Basic reset */  
-body, h1, p, ul {  
+/* General Styles */  
+body {  
+    font-family: sans-serif;  
     margin: 0;  
     padding: 0;  
+    background-color: #f4f4f4; /* Light gray background */  
+    color: #333; /* Dark gray text */  
 }  
 
-/* Container with CSS Grid */  
-.container {  
-    display: grid;  
-    grid-template-rows: auto 1fr auto; /* Header, Main, Footer */  
-    grid-template-columns: 1fr 300px;   /* Content, Sidebar */  
-    grid-template-areas:   
-        "header header"  
-        "content sidebar"  
-        "footer footer";  
-    height: 100vh; /* Full height */  
-}  
-
-/* Header styling */  
 header {  
-    grid-area: header;  
-    background-color: #333; /* Dark background */  
+    background-color: #34495e; /* Dark blue-gray header */  
     color: white;  
-    display: flex;  
-    flex-direction: column;  
+    padding: 1em 0;  
+    text-align: center; 
+     
 }  
 
-/* Header content */  
-.header-content {  
-    padding: 10px;  
-    font-size: 24px; /* Larger font */  
+header h1 {  
+    margin: 0;  
+    font-size: 2em;  
 }  
 
-/* Navigation styles */  
 nav {  
-    background-color: black; /* Black background for navigation */  
+    margin-top: 1em; 
+    background-color: black; /* Black background for navigation */   
+} 
+nav a {  
+    color: white;  
+    text-decoration: none;  
+    padding: 0.5em 1em;  
+    border-radius: 5px;   
+    margin: 0 0.5em;  
+    display: inline-block; /* Prevents the links from stacking on smaller screens */  
 }  
 
 nav ul {  
@@ -44,12 +41,14 @@ nav ul {
 }  
 
 nav ul li {  
-    margin: 0 35px; /* Spacing between items */  
+    margin: 0 6em; /* Spacing between items */  
 }  
 
 nav ul li a {  
     color: white; /* Link color */  
     text-decoration: none; /* Remove underline */  
+    border-radius: 5px; 
+    
 }  
 
 /* Change link color on hover */  
@@ -57,38 +56,79 @@ nav ul li a:hover {
     text-decoration: underline; /* Underline on hover */  
 }  
 
-/* Main content styling */  
 main {  
-    grid-area: content;  
-    display: grid; /* Enable grid in main */  
-    grid-template-areas:   
-        "content sidebar";  
-    padding: 20px; /* Padding for main content */  
+    max-width: 960px; /* Adjust as needed */  
+    margin: 2em auto;  
+    padding: 1em;  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-around; /* Evenly distribute cards */  
 }  
 
-/* Main content section */  
-.content {  
-    grid-area: content;  
-    background-color: lightgray; /* Background for main content */  
-    padding: 20px; /* Padding */  
-}  
 .card {  
-    grid-area: card;  
-    background-color: lightgray; /* Background for main content */  
-    padding: 20px; /* Padding */  
-} 
-
-/* Sidebar styling */  
-.sidebar {  
-    background-color: white; /* White background */  
-    padding: 20px; /* Padding for sidebar */  
+    background-color: white;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    margin-bottom: 1em;  
+    padding: 1em;  
+    width: 45%; /* Adjust as needed, consider screen size */  
+    box-sizing: border-box; /* Makes padding and border part of the element's total width */  
 }  
 
-/* Footer styling */  
+.card h2 {  
+    margin-top: 0;  
+    color: #3498db; /* Blue heading */  
+}  
+
+.card img {  
+    max-width: 100%;  
+    height: auto;  
+    border-radius: 5px;  
+    margin-bottom: 1em;  
+}  
+
+/* Web Dev Resources Card */  
+.card ul {  
+    padding-left: 20px;  
+    list-style-type: disc;  
+}  
+
+.card li {  
+    margin-bottom: 0.5em;  
+}  
+
+.card li a {  
+    color: #3498db; /* Blue links */  
+    text-decoration: none;  
+}  
+
+.card li a:hover {  
+    text-decoration: underline;  
+}  
+
+/* Footer Styles */  
 footer {  
-    grid-area: footer;  
-    background-color: #333; /* Dark background */  
+    background-color: #34495e;  
     color: white;  
     text-align: center;  
-    padding: 10px; /* Padding */  
+    padding: 1em 0;  
+    font-size: 0.9em;  
 }  
+
+footer p {  
+    margin: 0.5em 0;  
+}  
+
+
+/* Media Queries for Responsiveness */  
+@media (max-width: 768px) {  
+    .card {  
+        width: 90%; /* Cards take up more width on smaller screens */  
+    }  
+
+    nav a {  
+        display: block; /* Stack links on top of each other */  
+        margin: 0.5em auto; /* Center the links and add some margin */  
+        width: 80%; /* Make the links wider */  
+    }  
+} 

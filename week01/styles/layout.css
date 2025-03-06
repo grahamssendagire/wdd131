@@ -35,6 +35,7 @@ header {
 nav {  
     background-color: black; /* Black background for navigation */  
 }  
+ 
 
 nav ul {  
     display: flex;  
