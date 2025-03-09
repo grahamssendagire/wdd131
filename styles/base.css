@@ -54,8 +54,10 @@ nav ul li a {
 
 /* Change link color on hover */  
 nav ul li a:hover {  
-    text-decoration: underline; /* Underline on hover */  
+    text-decoration: underline; /* Underline on hover */ 
+    background-color: rgba(204, 19, 19, 0.8); 
 }  
+
 
 main {  
     max-width: 960px; /* Adjust as needed */  
