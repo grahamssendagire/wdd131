@@ -82,7 +82,7 @@ main {
 }  
 
 .card img {  
-    max-width: 100%;  
+    max-width: 20%;  
     height: auto;  
     border-radius: 5px;  
     margin-bottom: 1em;  
