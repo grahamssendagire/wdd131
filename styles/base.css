@@ -84,25 +84,31 @@ main {
 }  
 
 .card img {  
-    max-width: 20%;  
+    max-width: 50%;  
     height: auto;  
     border-radius: 5px;  
     margin-bottom: 1em;  
 }  
-
 /* Web Dev Resources Card */  
 .card ul {  
     padding-left: 20px;  
-    list-style-type: disc;  
+    list-style-type: disc; 
+    padding-top: 100px;  
+    
 }  
 
 .card li {  
-    margin-bottom: 0.5em;  
+    margin-bottom:10px; 
+    padding: 10px; 
+    justify-content: space-around 
+      
 }  
 
 .card li a {  
     color: #3498db; /* Blue links */  
-    text-decoration: none;  
+    text-decoration: none; 
+    
+  
 }  
 
 .card li a:hover {  
