@@ -10,17 +10,127 @@ header {
     text-align: center;  
     padding: 10px 0;  
 }  
+nav {  
+    margin-top: 1em; 
+    
+} 
+nav a {  
+    color: white;  
+    text-decoration: none;  
+    padding: 0.5em 1em;  
+    border-radius: 5px;   
+    margin: 0 0.5em;  
+    display: inline-block; /* Prevents the links from stacking on smaller screens */  
+}  
+
+nav ul {  
+    display: flex;  
+    list-style-type: none; /* Remove bullets */  
+    padding: 10px 0; /* Padding for nav */  
+    justify-content: none; /* Open justification for the navigation items */  
+}  
+
+nav ul li {  
+    margin: 0 6em; /* Spacing between items */  
+}  
+
+nav ul li a {  
+    color: white; /* Link color */  
+    text-decoration: none; /* Remove underline */  
+    border-radius: 5px; 
+    
+}  
+
+/* Change link color on hover */  
+nav ul li a:hover {  
+    text-decoration: underline; /* Underline on hover */ 
+    background-color: rgba(204, 19, 19, 0.8); 
+}  
 
 h1 {  
     margin: 0;  
 }  
-
+h2 {  
+    margin: 0;  
+    text-align: center; 
+}   
 .container {  
     width: 90%;  
     max-width: 1200px;  
     margin: auto;  
     padding: 20px;  
 }  
+* {  
+    box-sizing: border-box;  
+}  
+
+body {  
+    margin: 0;  
+    font-family: Arial, sans-serif;  
+}  
+
+.header {  
+    background-color: #333;  
+    padding: 10px;  
+}  
+
+.navbar {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+}  
+
+.hamburger {  
+    display: none;  
+    font-size: 30px;  
+    cursor: pointer;  
+    color: white;  
+}  
+
+.nav-menu {  
+    display: flex;  
+}  
+
+.nav-menu ul {  
+    list-style: none;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+}  
+
+.nav-menu li {  
+    margin: 0 15px;  
+}  
+
+.nav-menu a {  
+    color: white;  
+    text-decoration: none;  
+}  
+
+
+    .nav-menu {  
+        display: none; /* Hide menu by default */  
+        flex-direction: column;  
+        position: absolute;  
+        top: 60px; /* Adjust based on header height */  
+        left: 0;  
+        background-color: #333;  
+        width: 100%;  
+    }  
+
+    .nav-menu.show {  
+        display: flex; /* Show menu when toggled */  
+    }  
+
+    .nav-menu ul {  
+        flex-direction: column;  
+        width: 100%;  
+    }  
+    
+    .nav-menu li {  
+        margin: 10px 0;  
+        text-align: center;  
+    }  
 
 .image-container {  
     display: flex;  
@@ -40,4 +150,24 @@ h1 {
     font-size: 18px;  
     margin-top: 10px;  
     color: #6a1b9a; /* Purple text color */  
+} 
+footer {  
+    background-color: #34495e;  
+    color: white;  
+    text-align: center;  
+    padding: 1em 0;  
+    font-size: 0.9em;  
 }  
+
+footer p {  
+    margin: 0.5em 0;  
+}  
+@media (max-width: 768px) {  
+    .caption {  
+        font-size: 16px; /* Smaller font size on mobile */  
+    }  
+
+    .image-container img {  
+        max-width: 100%; /* Ensure images take full width on small screens */  
+    } 
+}
