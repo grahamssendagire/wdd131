@@ -1,13 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {  
-    const hamburger = document.getElementById("hamburger");  
-    const navMenu = document.getElementById("nav-menu");  
 
-    hamburger.addEventListener("click", function() {  
-        navMenu.classList.toggle("show");  
-        if (navMenu.classList.contains("show")) {  
-            hamburger.textContent = '✖'; // Change to 'X' when open  
-        } else {  
-            hamburger.textContent = '☰'; // Change back to hamburger when closed  
-        }  
-    });  
-});  
+document.getElementById("currentyear").textContent = new Date().getFullYear();  
+document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;  
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+ 

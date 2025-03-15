@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-    background-color: #36454f;
+    background-color: #800080; 
     margin: 0 auto;
     max-width: 800px;
     padding: 0.5em 0;
@@ -41,7 +41,7 @@ nav a {
 nav a:hover {
     border: 1px solid #fff;
     background-color: #eee;
-    color: #000;
+    background-color: #800080; 
 }
 
 main {
@@ -51,7 +51,7 @@ main {
 }
 
 footer {
-    background-color: #36454f;
+    background-color: #800080; 
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -84,7 +84,7 @@ footer {
 	flex-direction: column;
 	justify-content: space-around;
 	list-style: none;
-	background-color: #333;
+	background-color: none;
 	color: #fff;
 }
 
