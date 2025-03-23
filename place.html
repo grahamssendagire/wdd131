@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="styles/place.css"> 
     <link rel="stylesheet" href="styles/place-large.css">  
-    <title>Kampala</title>  
-    
+    <title>Kampala</title>    
 </head>  
 <body>  
 <header>  
@@ -14,13 +13,16 @@
 </header>  
 <main>
     <div class="container">
-    <figure>
-        <img src="images/home.webp" alt=" Cats">
-       
-    </figure>
+        <section class="home">  
+            <picture>  
+                <source srcset="images/home-medium.webp" media="(max-width: 600px)">  
+                <source srcset="images/home-large.webp" media="(min-width: 601px)">  
+                <img src="images/home-large.webp" alt="Scenic view of [Country Name]">  
+            </picture>    
+        </section> 
 </main>  
 <div class="content">  
-    <h2>Data:</h2>  
+    <h2>Data</h2>  
     <ul>  
         <li>Area: 587,041 sq km</li>  
         <li>Population: 27,691,018</li>  
@@ -34,7 +36,7 @@
 </div>  
 
 <div class="content">  
-    <h2>Weather:</h2>  
+    <h2>Weather</h2>  
     <ul>  
         <li>Temperature: 10 °C</li>  
         <li>Conditions: Partly Cloudy</li>  
@@ -47,6 +49,6 @@
     <p class="active">&copy; <span id="currentyear"></span> Graham Ssendagire Kampala Uganda.</p>  
     <p id="lastModified" ></p> 
 </footer>  
-<script src ="scripts/temples.js"defer> </script>  
+<script src ="scripts/place.js"defer> </script>  
 </body>  
 </html>  

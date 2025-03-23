@@ -1,0 +1,90 @@
+
+
+
+    @media (min-width: 35rem) {
+        header {  
+            background-color: #c0392b;  
+            color: white;  
+            text-align: center; 
+            padding: 1em 0;
+            max-width: 800px;
+            margin: 0 auto; 
+        } 
+        body {  
+            font-family: Arial, sans-serif;  
+            background-color: #f9f9f9;  
+            margin: 0;  
+            padding: 20px;  
+        }  
+        h2::before {  
+            content: "😊"; /* Emoticon */  
+            margin-right: 10px; /* Spacing between emoticon and text */  
+        }  
+        
+        p {  
+            font-size: 1.2em;  
+            margin: 5px 0;  
+        } 
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            padding: 0;
+        }
+        .data {  
+            background-color: #4c7f4c; /* Green background */  
+            border-radius: 5px;  
+            padding: 15px;  
+            margin: 10px 0;  
+        }  
+        .weather {  
+            background-color: #4c7f4c; /* Green background */  
+            border-radius: 5px;  
+            padding: 15px;  
+            margin: 10px 0;  
+        h1 {
+            font-size: 2.5rem;
+            margin-left: 0;
+            text-align: center;
+        }
+    
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        ul {  
+            list-style-type: none;  
+            padding: 0;
+            text-align: center;  
+        }  
+         figure{
+            padding: 1em 0;
+            max-width: 800px;
+            margin: 0 auto; 
+        }
+        li {  
+            margin: 0.5em 0; 
+            text-align: center; 
+        }  
+        .navigation {
+            flex-direction: row;
+        }
+        
+        .navigation a {
+            display: block;
+            flex: 1 1 100%;
+        }
+    
+        .stuff {
+            margin: 1rem auto;
+        }
+        footer {
+            background-color: #c0392b;  
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    }
+    }

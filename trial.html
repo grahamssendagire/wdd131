@@ -3,41 +3,57 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Madagascar</title>  
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->  
+    <title>Kampala</title>  
+    <link rel="stylesheet" href="css/styles.css">  
+    <script src="js/script.js" defer></script>  
 </head>  
 <body>  
 
-<header>  
-    <h1>Madagascar</h1>  
-</header>  
+<div class="container">  
+    <header>  
+        <h1>Welcome to Madagascar!</h1>  
+    </header>  
 
-<section>  
-    <h2>Data</h2>  
-    <ul>  
-        <li><strong>Area:</strong> 587,041 sq km</li>  
-        <li><strong>Population:</strong> 27,691,018</li>  
-        <li><strong>Capital:</strong> Antananarivo</li>  
-        <li><strong>Languages:</strong> Malagasy, French</li>  
-        <li><strong>Currency:</strong> Malagasy Ariary</li>  
-        <li><strong>Time Zone:</strong> UTC+3</li>  
-        <li><strong>Calling Code:</strong> +261</li>  
-        <li><strong>Internet TLD:</strong> .mg</li>  
-    </ul>  
+    <section class="home">  
+        <picture>  
+            <source srcset="images/home-medium.webp" media="(max-width: 600px)">  
+            <source srcset="images/home-large.webp" media="(min-width: 601px)">  
+            <img src="images/home-large.webp" alt="Scenic view of [Country Name]">  
+        </picture>    
+    </section>  
 
-    <h2>Weather</h2>  
-    <ul>  
-        <li><strong>Temperature:</strong> 10 °C</li>  
-        <li><strong>Conditions:</strong> Partly Cloudy</li>  
-        <li><strong>Wind:</strong> 5 km/h</li>  
-        <li><strong>Wind Chill:</strong> 9.8 °C</li>  
-    </ul>  
-</section>  
+    <div class="content">  
+        <div class="data">  
+            <h2>Data:</h2>  
+            <p>Area: 587,041 sq km</p>  
+            <p>Population: 27,691,018</p>  
+            <p>Capital: Antananarivo</p>  
+            <p>Languages: Malagasy, French</p>  
+            <p>Currency: Malagasy Ariary</p>  
+            <p>Time Zone: UTC+3</p>  
+            <p>Calling Code: +261</p>  
+            <p>Internet TLD: .mg</p>  
+        </div> 
+        <section id="weather">  
+            <h2>Weather</h2>  
+            <div id="temperature">Temperature: 5°C</div>  
+            <div id="windSpeed">Wind Speed: 15 km/h</div>  
+            <div>Wind Chill: <span id="windChill"></span></div>  
+        </section>  
+        <div class="weather">  
+            <h2>Weather: <span class="weather-icon" aria-hidden="true"></span></h2>  
+            <p>Temperature: 10 °C</p>  
+            <p>Conditions: Partly Cloudy</p>  
+            <p>Wind: 5 km/h</p>  
+            <p>Wind Chill: <span id="wind-chill">N/A</span></p>  
+        </div>  
+    </div>  
 
-<footer class="footer">  
-    <p>&copy; 2024 Rubia Magdelena Francesco Madagascar</p>  
-    <p>Last Modification: 02/08/2024 22:47:47</p>  
-</footer>  
+    <footer>  
+        <p>&copy; <span id="current-year"></span> Rubia Magdalena Francesco Madagascar</p>  
+        <p>Last Modified: <span id="last-modified"></span></p>  
+    </footer>  
+</div>  
 
 </body>  
-</html>  
+</html> 
