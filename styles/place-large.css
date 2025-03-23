@@ -10,6 +10,7 @@
             max-width: 800px;
             margin: 0 auto; 
         } 
+        
         body {  
             font-family: Arial, sans-serif;  
             background-color: #f9f9f9;  
@@ -48,6 +49,11 @@
             text-align: center;
         }
     
+        :root {  
+            --main-color: #007BFF; /* Example color */  
+            --text-color: #333;  
+        }  
+        
         h2 {
             font-size: 2rem;
             text-align: center;

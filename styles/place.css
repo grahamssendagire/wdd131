@@ -6,7 +6,11 @@
             margin: 0;  
             padding: 20px;  
         } 
-       
+        :root {  
+            --main-color: #007BFF; /* Example color */  
+            --text-color: #333;  
+        }  
+        
         header {  
             background-color: #c0392b;  
             color: white;  
