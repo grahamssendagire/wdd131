@@ -172,6 +172,7 @@ function getAllIndexes(array, arrowCondition) {
 // console.log(testConditionedArray);
 // console.log(testConditionedArray[0]);
 
+
 function createFilteredTempleCards(listToFilter, arrowCondition) {
   for (let i = 0; i < filteredArrayIndexes.length; i++) {
     cards[i].innerHTML = ``;
