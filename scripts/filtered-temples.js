@@ -58,11 +58,44 @@ const temples = [
 	  imageUrl:
 	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 	},
+	
+	{
+	  templeName: "Accra Ghana ",
+	  location: "Ghana City, Ghana",
+	  dedicated: "2001, November, 2",
+	  area: 17500,
+	  imageUrl:
+	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+	},
+	{
+	  templeName: "Nairobi Kenya",
+	  location: "Mountain View Nairobi",
+	  dedicated: "2021, September, 11",
+	  area: 6081,
+	  imageUrl:
+	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+	},
+	{
+	  templeName: "Abidjan Ivory Coast",
+	  location: "Riviera Attoban",
+	  dedicated: "2018, November, 8",
+	  area: 23908,
+	  imageUrl:
+	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+	},
+	{
+	  templeName: "Manilla Philippines",
+	  location: "Mexico City, Mexico",
+	  dedicated: "1984,September, 27",
+	  area: 26683,
+	  imageUrl:
+	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+	}
 	// Add more temple objects here...
   ];
   let templeNames = [];
   temples.forEach(tempObj => {
-    templeNames.push(tempObj.templeName);
+  templeNames.push(tempObj.templeName);
   });
 
 //   console.log(templeNames);
