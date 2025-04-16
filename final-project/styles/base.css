@@ -335,7 +335,9 @@ nav ul.menu-active{
     border: 2px black solid;
     margin: 1rem;
 }
-
+.footer-logo{
+    max-width:100%
+}
 .discover-image{
     display: flex;
     flex-direction: column;

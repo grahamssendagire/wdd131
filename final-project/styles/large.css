@@ -31,7 +31,9 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }    
-
+    .footer-logo {
+        max-width:100%
+    }
     .main-hero{
         grid-area: h;
         position: relative;      
